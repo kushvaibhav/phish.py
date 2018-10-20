@@ -1,0 +1,22 @@
+Configure Apache to run Python CGI
+
+1. Open the "httpd.conf" apache configuration file located in the apache install directory in the conf directory. 
+
+2. Search the "httpd.conf" file for the line:
+
+        Options Indexes FollowSymLinks
+
+3. Add ExecCGI to this line. The line should now look similar to the following (NOTE: there may be more options listed):
+
+        Options Indexes FollowSymLinks ExecCGI
+
+4. Next, search for the following:
+
+        #AddHandler cgi-script .cgi
+
+5. Uncomment this line by removing the "#" in front of the line, and add a .py to the end of the line.
+   The new line should look like this:
+
+        AddHandler cgi-script .cgi .py
+        
+3. Restart Apache
