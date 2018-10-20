@@ -20,6 +20,7 @@ like where you want to redirect your webpage after saving credentials (Any other
 *Change the first line of program "#!C:\Python34\python" to your python installation directory.
 
 *You can choose where you want your website to redirect by changing the value of location header.
+
 Example: Change print("Location:https://www.facebook.com/") to print("Location:https://www.twitter.com/").
 
 *You can also redirect your webpage to any other login or fake OTP page.
