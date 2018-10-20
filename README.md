@@ -8,7 +8,7 @@ like where you want to redirect your webpage after saving credentials (Any other
 1. Download your webpage from browser by right clicking on empty space & selecting "Save Page As" or by pressing "ctrl+s".
 2. Open your downloaded webpage with notepad & search for "action=".
 3. Change value of "action" attribute to "phish.py". 
-   Example: <form action="login.php"> to <form action="phish.py">
+   Example: &lt;form action="login.php"&gt; to <form action="phish.py">
 4. Now configure your webserver to run python CGI programs.
    (How to configure Xampp/Apache is given in Apache Configuration file.)
 5. Copy your edited webpage to server directory (htdocs/www).
